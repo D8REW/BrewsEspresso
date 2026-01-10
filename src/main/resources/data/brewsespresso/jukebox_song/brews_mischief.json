@@ -1,0 +1,11 @@
+{
+  "sound_event": {
+    "sound_id": "brewsespresso:brews_mischief",
+    "range": 16.0
+  },
+  "description": {
+    "text": "Joshy__dude - Brew's Mischief"
+  },
+  "length_in_seconds": 77.0,
+  "comparator_output": 8
+}
