@@ -1,5 +1,5 @@
 {
-  "parent": "brewsespresso:item/generated",
+  "parent": "minecraft:item/generated",
   "textures": {
     "layer0": "brewsespresso:item/brews_mischief"
   }
