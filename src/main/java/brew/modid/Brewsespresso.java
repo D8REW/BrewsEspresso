@@ -1,6 +1,8 @@
 package brew.modid;
 
+import brew.modid.item.custom.ModItemGroups;
 import brew.modid.item.custom.ModItems;
+import brew.modid.sound.custom.ModSounds;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -9,7 +11,7 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceKey;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 import org.slf4j.Logger;
@@ -21,7 +23,7 @@ public class Brewsespresso implements ModInitializer {
 
 
 	public static final ResourceKey<CreativeModeTab> CUSTOM_ITEM_GROUP_KEY =
-			ResourceKey.create(Registries.CREATIVE_MODE_TAB, ResourceLocation.fromNamespaceAndPath(MOD_ID, "item_group"));
+			ResourceKey.create(Registries.CREATIVE_MODE_TAB, Identifier.fromNamespaceAndPath(MOD_ID, "item_group"));
 
 
 	public static final CreativeModeTab CUSTOM_ITEM_GROUP = FabricItemGroup.builder()
@@ -32,6 +34,9 @@ public class Brewsespresso implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ModItems.initialize();
+		ModItemGroups.initialize();
+		ModSounds.initialize();
+
 
 
 		Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, CUSTOM_ITEM_GROUP_KEY, CUSTOM_ITEM_GROUP);
@@ -40,7 +45,5 @@ public class Brewsespresso implements ModInitializer {
 		ItemGroupEvents.modifyEntriesEvent(CUSTOM_ITEM_GROUP_KEY).register(itemGroup -> {
 			itemGroup.accept(ModItems.BREWS_MISCHIEF);
 		});
-
-		LOGGER.info("Hello Fabric world!");
 	}
 }
