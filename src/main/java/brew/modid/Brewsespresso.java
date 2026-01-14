@@ -22,6 +22,8 @@ public class Brewsespresso implements ModInitializer {
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
 
+
+
 	public static final ResourceKey<CreativeModeTab> CUSTOM_ITEM_GROUP_KEY =
 			ResourceKey.create(Registries.CREATIVE_MODE_TAB, Identifier.fromNamespaceAndPath(MOD_ID, "item_group"));
 
@@ -31,6 +33,8 @@ public class Brewsespresso implements ModInitializer {
 			.icon(() -> new ItemStack(ModItems.BREWS_MISCHIEF))
 			.build();
 
+
+
 	@Override
 	public void onInitialize() {
 		ModItems.initialize();
@@ -39,11 +43,11 @@ public class Brewsespresso implements ModInitializer {
 
 
 
+
 		Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, CUSTOM_ITEM_GROUP_KEY, CUSTOM_ITEM_GROUP);
-
-
 		ItemGroupEvents.modifyEntriesEvent(CUSTOM_ITEM_GROUP_KEY).register(itemGroup -> {
 			itemGroup.accept(ModItems.BREWS_MISCHIEF);
+			itemGroup.accept(ModItems.TULIP_BANNER_PATTERN);
 		});
 	}
 }

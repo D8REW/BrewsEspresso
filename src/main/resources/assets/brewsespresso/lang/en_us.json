@@ -1,4 +1,22 @@
 {
   "item.brewsespresso.brews_mischief": "Music Disc",
-  "itemGroup.brewsespresso.item_group": "Brews Espresso"
+  "itemGroup.example-mod": "Brews Espresso",
+  "itemGroup.brewsespresso.item_group": "Brews Espresso",
+  "item.brewsespresso.tulip_banner_pattern": "Tulip Banner Pattern",
+  "block.minecraft.banner.brewsespresso_banner.tulip.white": "White Tulip",
+  "block.minecraft.banner.brewsespresso_banner.tulip.orange": "Orange Tulip",
+  "block.minecraft.banner.brewsespresso_banner.tulip.magenta": "Magenta Tulip",
+  "block.minecraft.banner.brewsespresso_banner.tulip.light_blue": "Light Blue Tulip",
+  "block.minecraft.banner.brewsespresso_banner.tulip.yellow": "Yellow Tulip",
+  "block.minecraft.banner.brewsespresso_banner.tulip.lime": "Lime Tulip",
+  "block.minecraft.banner.brewsespresso_banner.tulip.pink": "Pink Tulip",
+  "block.minecraft.banner.brewsespresso_banner.tulip.gray": "Gray Tulip",
+  "block.minecraft.banner.brewsespresso_banner.tulip.light_gray": "Light Gray Tulip",
+  "block.minecraft.banner.brewsespresso_banner.tulip.cyan": "Cyan Tulip",
+  "block.minecraft.banner.brewsespresso_banner.tulip.purple": "Purple Tulip",
+  "block.minecraft.banner.brewsespresso_banner.tulip.blue": "Blue Tulip",
+  "block.minecraft.banner.brewsespresso_banner.tulip.brown": "Brown Tulip",
+  "block.minecraft.banner.brewsespresso_banner.tulip.green": "Green Tulip",
+  "block.minecraft.banner.brewsespresso_banner.tulip.red": "Red Tulip",
+  "block.minecraft.banner.brewsespresso_banner.tulip.black": "Black Tulip"
 }
