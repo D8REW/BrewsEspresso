@@ -20,6 +20,9 @@
 		],
 		"fabric-datagen": [
 			"brew.modid.BrewsespressoDataGenerator"
+		],
+		"client": [
+			"brew.modid.BrewsespressoClient"
 		]
 	},
 	"mixins": [

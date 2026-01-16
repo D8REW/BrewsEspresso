@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "brewsespresso:item/emet_gui",
+    "particle": "brewsespresso:item/emet_gui"
+  }
+}

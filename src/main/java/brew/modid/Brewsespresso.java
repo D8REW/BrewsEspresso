@@ -2,6 +2,7 @@ package brew.modid;
 
 import brew.modid.item.custom.ModItemGroups;
 import brew.modid.item.custom.ModItems;
+import brew.modid.particle.custom.ModParticles;
 import brew.modid.sound.custom.ModSounds;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
@@ -40,7 +41,7 @@ public class Brewsespresso implements ModInitializer {
 		ModItems.initialize();
 		ModItemGroups.initialize();
 		ModSounds.initialize();
-
+		ModParticles.initialize();
 
 
 
@@ -48,6 +49,7 @@ public class Brewsespresso implements ModInitializer {
 		ItemGroupEvents.modifyEntriesEvent(CUSTOM_ITEM_GROUP_KEY).register(itemGroup -> {
 			itemGroup.accept(ModItems.BREWS_MISCHIEF);
 			itemGroup.accept(ModItems.TULIP_BANNER_PATTERN);
+			itemGroup.accept(ModItems.EMET);
 		});
 	}
 }
