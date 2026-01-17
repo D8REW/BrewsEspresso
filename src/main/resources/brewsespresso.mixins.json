@@ -3,7 +3,9 @@
 	"package": "brew.modid.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
-		"ExampleMixin"
+		"ExampleMixin",
+		"emet.PlayerMixin",
+		"emet.ServerPlayerMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

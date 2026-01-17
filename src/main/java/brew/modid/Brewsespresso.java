@@ -3,10 +3,12 @@ package brew.modid;
 import brew.modid.item.custom.ModItemGroups;
 import brew.modid.item.custom.ModItems;
 import brew.modid.particle.custom.ModParticles;
+import brew.modid.payload.custom.EmitterParticlePayload;
 import brew.modid.sound.custom.ModSounds;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.fabricmc.fabric.api.networking.v1.PayloadTypeRegistry;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
@@ -42,6 +44,7 @@ public class Brewsespresso implements ModInitializer {
 		ModItemGroups.initialize();
 		ModSounds.initialize();
 		ModParticles.initialize();
+		PayloadTypeRegistry.playS2C().register(EmitterParticlePayload.ID, EmitterParticlePayload.CODEC);
 
 
 

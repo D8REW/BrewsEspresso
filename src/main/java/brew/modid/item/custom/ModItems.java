@@ -50,7 +50,7 @@ public class ModItems {
     public static final Item EMET = register(
             "emet",
             Item::new,
-            new Item.Properties().sword(EMET_MATERIAL, 8f, -3.1f)
+            new Item.Properties().sword(EMET_MATERIAL, 7f, -2.8f)
     );
 
 
