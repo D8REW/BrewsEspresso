@@ -19,6 +19,8 @@
   "block.minecraft.banner.brewsespresso_banner.tulip.green": "Green Tulip",
   "block.minecraft.banner.brewsespresso_banner.tulip.red": "Red Tulip",
   "block.minecraft.banner.brewsespresso_banner.tulip.black": "Black Tulip",
-  "item.brewsespresso.emet": "§7Emet",
-  "item.brewsespresso.emet.description": "Judge of Truth"
+  "item.brewsespresso.emet": "Emet",
+  "item.brewsespresso.emet.description": "Judge of Truth",
+  "painting.brewsespresso.acorn.title": "Acorn",
+  "painting.brewsespresso.acorn.author": "DahliaBrew"
 }

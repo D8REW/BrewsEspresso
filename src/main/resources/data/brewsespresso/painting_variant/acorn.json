@@ -1,0 +1,13 @@
+{
+  "asset_id": "brewsespresso:acorn",
+  "width": 1,
+  "height": 1,
+  "title": {
+    "translate": "painting.brewsespresso.acorn.title",
+    "color": "yellow"
+  },
+  "author": {
+    "translate": "painting.brewsespresso.acorn.author",
+    "color": "gray"
+  }
+}
