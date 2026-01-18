@@ -1,4 +1,4 @@
-package brew.modid.item.custom;
+package brew.modid.item;
 
 
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;

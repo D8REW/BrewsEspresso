@@ -1,4 +1,4 @@
-package brew.modid.particle.custom;
+package brew.modid.particle.emet;
 
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;

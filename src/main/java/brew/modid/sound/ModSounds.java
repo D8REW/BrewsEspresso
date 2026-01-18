@@ -1,4 +1,4 @@
-package brew.modid.sound.custom;
+package brew.modid.sound;
 
 import brew.modid.Brewsespresso;
 import net.minecraft.core.Registry;

@@ -1,5 +1,6 @@
 package brew.modid.mixin.emet;
 
+import brew.modid.item.emet.EmetItem;
 import com.llamalad7.mixinextras.injector.wrapoperation.Operation;
 import com.llamalad7.mixinextras.injector.wrapoperation.WrapOperation;
 import net.fabricmc.fabric.api.networking.v1.PlayerLookup;
@@ -10,9 +11,8 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.Entity;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
-import brew.modid.payload.custom.EmitterParticlePayload;
-import brew.modid.item.custom.ModItems;
-import brew.modid.particle.custom.ModParticles;
+import brew.modid.payload.EmitterParticlePayload;
+import brew.modid.particle.ModParticles;
 
 @Mixin(ServerPlayer.class)
 public class ServerPlayerMixin {
@@ -23,7 +23,7 @@ public class ServerPlayerMixin {
     private void brew$critEmitterPayload(ServerChunkCache instance, Entity target, Packet<?> packet, Operation<Void> original) {
         ServerPlayer attacker = (ServerPlayer) (Object) this;
 
-        if (attacker.getMainHandItem().is(ModItems.EMET)) {
+        if (attacker.getMainHandItem().is(EmetItem.EMET)) {
             // Send our custom payload to everyone watching the fight
             EmitterParticlePayload payload = new EmitterParticlePayload(target.getId(), ModParticles.EMET_CRIT);
 

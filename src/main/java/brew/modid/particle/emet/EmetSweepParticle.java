@@ -1,4 +1,4 @@
-package brew.modid.particle.custom;
+package brew.modid.particle.emet;
 
 import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.client.particle.Particle;

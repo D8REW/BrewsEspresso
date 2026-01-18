@@ -1,39 +1,22 @@
-package brew.modid.item.custom;
+package brew.modid.item.emet;
 
 import brew.modid.Brewsespresso;
-import brew.modid.sound.custom.ModSounds;
 import net.minecraft.core.Registry;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
+import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.TextColor;
 import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ToolMaterial;
+
 import java.util.function.Function;
 
-public class ModItems {
-
-
-    public static final Item BREWS_MISCHIEF = register("brews_mischief",
-            Item::new, new Item.Properties()
-                    .stacksTo(16)
-                    .rarity(Rarity.RARE)
-                    .jukeboxPlayable(ModSounds.BREWS_MISCHIEF)
-    );
-
-
-//Thanks to ThePotatoArchivist, ioblackshaw & Hugman for helping me with the struggle which was Banner Patterns.
-    public static final Item TULIP_BANNER_PATTERN = register("tulip_banner_pattern",
-            Item::new, new Item.Properties()
-                    .stacksTo(16)
-                    .rarity(Rarity.RARE)
-                    .component(DataComponents.PROVIDES_BANNER_PATTERNS, TagKey.create(Registries.BANNER_PATTERN, Identifier.fromNamespaceAndPath("brewsespresso", "tulip")))
-    );
-
+public class EmetItem {
 
     public static final TagKey<Item> REPAIRS_EMET = TagKey.create(
             Registries.ITEM,
@@ -50,7 +33,12 @@ public class ModItems {
     public static final Item EMET = register(
             "emet",
             Item::new,
-            new Item.Properties().sword(EMET_MATERIAL, 7f, -2.8f)
+            new Item.Properties()
+                    .sword(EMET_MATERIAL, 7f, -2.8f)
+                    .component(DataComponents.CUSTOM_NAME, Component.literal("Emet")
+                            .withStyle(style -> style
+                                    .withColor(TextColor.fromRgb(0xC0C0C0))
+                            ))
     );
 
 
@@ -63,4 +51,4 @@ public class ModItems {
 
     public static void initialize() {
     }
-} 
+}

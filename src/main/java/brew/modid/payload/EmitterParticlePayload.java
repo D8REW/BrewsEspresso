@@ -1,6 +1,5 @@
-package brew.modid.payload.custom;
+package brew.modid.payload;
 
-import brew.modid.Brewsespresso;
 import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
 import net.minecraft.core.particles.ParticleOptions;
 import net.minecraft.core.particles.ParticleTypes;
@@ -29,9 +28,6 @@ public record EmitterParticlePayload(int entityId, ParticleOptions particle) imp
         return ID;
     }
 
-    /**
-     * The method called by your ServerPlayerMixin
-     */
     public static void send(ServerPlayer player, Entity entity, ParticleOptions particle) {
         ServerPlayNetworking.send(player, new EmitterParticlePayload(entity.getId(), particle));
     }

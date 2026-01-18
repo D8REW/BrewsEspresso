@@ -1,9 +1,9 @@
 package brew.modid;
 
-import brew.modid.particle.custom.EmetCritParticle;
-import brew.modid.particle.custom.EmetSweepParticle;
-import brew.modid.particle.custom.ModParticles;
-import brew.modid.payload.custom.EmitterParticlePayload;
+import brew.modid.particle.emet.EmetCritParticle;
+import brew.modid.particle.emet.EmetSweepParticle;
+import brew.modid.particle.ModParticles;
+import brew.modid.payload.EmitterParticlePayload;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
 import net.fabricmc.fabric.api.client.particle.v1.ParticleFactoryRegistry;
