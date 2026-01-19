@@ -17,9 +17,9 @@ public class ModParticles {
 
     public static void initialize() {
         Registry.register(BuiltInRegistries.PARTICLE_TYPE,
-                Identifier.fromNamespaceAndPath("modid", "emet_crit"), EMET_CRIT);
+                Identifier.fromNamespaceAndPath("brewsespresso", "emet_crit"), EMET_CRIT);
 
         Registry.register(BuiltInRegistries.PARTICLE_TYPE,
-                Identifier.fromNamespaceAndPath("modid", "emet_sweep"), EMET_SWEEP);
+                Identifier.fromNamespaceAndPath("brewsespresso", "emet_sweep"), EMET_SWEEP);
     }
 }
