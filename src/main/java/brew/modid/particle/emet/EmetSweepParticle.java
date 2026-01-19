@@ -51,7 +51,3 @@ public class EmetSweepParticle extends SingleQuadParticle {
         }
     }
 }
-
-
-
-

@@ -15,7 +15,7 @@ import static brew.modid.Brewsespresso.MOD_ID;
 public class ModItemGroups {
     public static final ResourceKey<CreativeModeTab> CUSTOM_ITEM_GROUP_KEY = ResourceKey.create(BuiltInRegistries.CREATIVE_MODE_TAB.key(), Identifier.fromNamespaceAndPath(MOD_ID, "item_group"));
     public static final CreativeModeTab CUSTOM_ITEM_GROUP = FabricItemGroup.builder()
-            .icon(() -> new ItemStack(ModItems.BREWS_MISCHIEF))
+            .icon(() -> new ItemStack(ModItems.BREWICH))
             .title(Component.translatable("itemGroup.example-mod"))
             .build();
 

@@ -10,6 +10,7 @@ import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.TagKey;
+import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ToolMaterial;
@@ -23,6 +24,10 @@ public class ModItems {
                     .stacksTo(16)
                     .rarity(Rarity.RARE)
                     .jukeboxPlayable(ModSounds.BREWS_MISCHIEF)
+    );
+
+    public static final Item BREWICH = register("brewich",
+            Item::new, new Item.Properties()
     );
 
 

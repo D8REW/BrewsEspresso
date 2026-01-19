@@ -34,7 +34,7 @@ public class Brewsespresso implements ModInitializer {
 
 	public static final CreativeModeTab CUSTOM_ITEM_GROUP = FabricItemGroup.builder()
 			.title(Component.translatable("itemGroup." + MOD_ID + ".item_group"))
-			.icon(() -> new ItemStack(ModItems.BREWS_MISCHIEF))
+			.icon(() -> new ItemStack(ModItems.BREWICH))
 			.build();
 
 
@@ -46,7 +46,7 @@ public class Brewsespresso implements ModInitializer {
 		ModSounds.initialize();
 		ModParticles.initialize();
 		EmetItem.initialize();
-		PayloadTypeRegistry.playS2C().register(EmitterParticlePayload.ID, EmitterParticlePayload.CODEC);
+		PayloadTypeRegistry.playS2C().register(EmitterParticlePayload.TYPE, EmitterParticlePayload.CODEC);
 
 
 

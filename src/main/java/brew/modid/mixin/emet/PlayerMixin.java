@@ -1,25 +1,20 @@
 package brew.modid.mixin.emet;
 
 import brew.modid.item.emet.EmetItem;
+import brew.modid.particle.ModParticles;
 import net.minecraft.core.particles.ParticleOptions;
 import net.minecraft.world.entity.player.Player;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.ModifyArg;
-import brew.modid.item.ModItems;
-import brew.modid.particle.ModParticles;
+
 
 @Mixin(Player.class)
 public class PlayerMixin {
 
-    @ModifyArg(
-            method = "doSweepAttack",
-            at = @At(value = "INVOKE", target = "Lnet/minecraft/server/level/ServerLevel;sendParticles(Lnet/minecraft/core/particles/ParticleOptions;DDDIDDDD)I", ordinal = 0),
-            index = 0
-    )
-    private <T extends ParticleOptions> T brew$candySweep(T particleOptions) {
+    @ModifyArg(method = "doSweepAttack", at = @At(value = "INVOKE", target = "Lnet/minecraft/server/level/ServerLevel;sendParticles(Lnet/minecraft/core/particles/ParticleOptions;DDDIDDDD)I", ordinal = 0), index = 0)
+    private <T extends ParticleOptions> T festive_frenzy$candySweep(T particleOptions) {
         Player player = (Player) (Object) this;
-
         if (player.getMainHandItem().is(EmetItem.EMET)) {
             return (T) ModParticles.EMET_SWEEP;
         }
