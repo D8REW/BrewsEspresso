@@ -3,8 +3,8 @@
   "credit": "Made with Blockbench",
   "parent": "minecraft:item/generated",
   "textures": {
-    "particle": "brewsespresso:item/emet",
-    "layer0": "brewsespresso:item/emet"
+    "particle": "brewsespresso:item/livyatan",
+    "layer0": "brewsespresso:item/livyatan"
   },
   "display": {
     "thirdperson_righthand": {

@@ -8,8 +8,8 @@ import net.minecraft.resources.Identifier;
 
 public class ModParticles {
 
-    public static final SimpleParticleType EMET_CRIT = FabricParticleTypes.simple();
-    public static final SimpleParticleType EMET_SWEEP = FabricParticleTypes.simple();
+    public static final SimpleParticleType LIVYATAN_CRIT = FabricParticleTypes.simple();
+    public static final SimpleParticleType LIVYATAN_SWEEP = FabricParticleTypes.simple();
 
 
 
@@ -17,9 +17,9 @@ public class ModParticles {
 
     public static void initialize() {
         Registry.register(BuiltInRegistries.PARTICLE_TYPE,
-                Identifier.fromNamespaceAndPath("brewsespresso", "emet_crit"), EMET_CRIT);
+                Identifier.fromNamespaceAndPath("brewsespresso", "livyatan_crit"), LIVYATAN_CRIT);
 
         Registry.register(BuiltInRegistries.PARTICLE_TYPE,
-                Identifier.fromNamespaceAndPath("brewsespresso", "emet_sweep"), EMET_SWEEP);
+                Identifier.fromNamespaceAndPath("brewsespresso", "livyatan_sweep"), LIVYATAN_SWEEP);
     }
 }

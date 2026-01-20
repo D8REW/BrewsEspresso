@@ -1,8 +1,8 @@
 package brew.modid;
 
+import brew.modid.item.LivyatanItem;
 import brew.modid.item.ModItemGroups;
 import brew.modid.item.ModItems;
-import brew.modid.item.emet.EmetItem;
 import brew.modid.particle.ModParticles;
 import brew.modid.payload.EmitterParticlePayload;
 import brew.modid.sound.ModSounds;
@@ -45,7 +45,7 @@ public class Brewsespresso implements ModInitializer {
 		ModItemGroups.initialize();
 		ModSounds.initialize();
 		ModParticles.initialize();
-		EmetItem.initialize();
+		LivyatanItem.initialize();
 		PayloadTypeRegistry.playS2C().register(EmitterParticlePayload.TYPE, EmitterParticlePayload.CODEC);
 
 
@@ -54,7 +54,7 @@ public class Brewsespresso implements ModInitializer {
 		ItemGroupEvents.modifyEntriesEvent(CUSTOM_ITEM_GROUP_KEY).register(itemGroup -> {
 			itemGroup.accept(ModItems.BREWS_MISCHIEF);
 			itemGroup.accept(ModItems.TULIP_BANNER_PATTERN);
-			itemGroup.accept(EmetItem.EMET);
+			itemGroup.accept(LivyatanItem.LIVYATAN);
 		});
 	}
 }

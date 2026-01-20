@@ -4,8 +4,8 @@
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
 		"ExampleMixin",
-		"emet.PlayerMixin",
-		"emet.ServerPlayerMixin"
+		"livyatan.PlayerMixin",
+		"livyatan.ServerPlayerMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

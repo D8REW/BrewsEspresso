@@ -1,4 +1,4 @@
-package brew.modid.particle.emet;
+package brew.modid.particle.livyatan;
 
 import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.client.particle.Particle;
@@ -9,10 +9,10 @@ import net.minecraft.client.renderer.LightTexture;
 import net.minecraft.core.particles.SimpleParticleType;
 import net.minecraft.util.RandomSource;
 
-public class EmetSweepParticle extends SingleQuadParticle {
+public class LivyatanSweepParticle extends SingleQuadParticle {
     private final SpriteSet sprites;
 
-    public EmetSweepParticle(ClientLevel clientLevel, double x, double y, double z, double velocityX, double velocityY, double velocityZ, SpriteSet sprites) {
+    public LivyatanSweepParticle(ClientLevel clientLevel, double x, double y, double z, double velocityX, double velocityY, double velocityZ, SpriteSet sprites) {
         super(clientLevel, x, y, z, sprites.first());
         this.lifetime = 4;
         this.quadSize = 1.0F - (float) velocityX * 0.5F;
@@ -47,7 +47,7 @@ public class EmetSweepParticle extends SingleQuadParticle {
         @Override
         public Particle createParticle(SimpleParticleType simpleParticleType, ClientLevel clientLevel, double x, double y, double z,
                                        double velocityX, double velocityY, double velocityZ, RandomSource randomSource) {
-            return new EmetSweepParticle(clientLevel, x, y, z, velocityX, velocityY, velocityZ, this.sprites);
+            return new LivyatanSweepParticle(clientLevel, x, y, z, velocityX, velocityY, velocityZ, this.sprites);
         }
     }
 }

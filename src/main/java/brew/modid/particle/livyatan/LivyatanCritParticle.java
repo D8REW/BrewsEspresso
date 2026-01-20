@@ -1,4 +1,4 @@
-package brew.modid.particle.emet;
+package brew.modid.particle.livyatan;
 
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
@@ -9,8 +9,8 @@ import net.minecraft.core.particles.SimpleParticleType;
 import net.minecraft.util.Mth;
 import net.minecraft.util.RandomSource;
 
-public class EmetCritParticle extends SingleQuadParticle {
-    public EmetCritParticle(ClientLevel clientLevel, double d, double e, double f, double g, double h, double i, TextureAtlasSprite sprite) {
+public class LivyatanCritParticle extends SingleQuadParticle {
+    public LivyatanCritParticle(ClientLevel clientLevel, double d, double e, double f, double g, double h, double i, TextureAtlasSprite sprite) {
         super(clientLevel, d, e, f, 0.0, 0.0, 0.0, sprite);
         this.friction = 0.7F;
         this.gravity = 0.5F;
@@ -41,7 +41,7 @@ public class EmetCritParticle extends SingleQuadParticle {
 
         public Particle createParticle(SimpleParticleType simpleParticleType, ClientLevel clientLevel, double x, double y, double z,
                                        double velocityX, double velocityY, double velocityZ, RandomSource randomSource) {
-            return new EmetCritParticle(clientLevel, x, y, z, velocityX, velocityY, velocityZ, this.sprite.get(randomSource));
+            return new LivyatanCritParticle(clientLevel, x, y, z, velocityX, velocityY, velocityZ, this.sprite.get(randomSource));
         }
     }
 }

@@ -1,4 +1,4 @@
-package brew.modid.item.emet;
+package brew.modid.item;
 
 import brew.modid.Brewsespresso;
 import net.minecraft.core.Registry;
@@ -13,33 +13,41 @@ import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ToolMaterial;
+import net.minecraft.world.item.component.AttackRange;
 
 
 import java.util.function.Function;
 
-public class EmetItem {
+public class LivyatanItem {
 
 
-    public static final TagKey<Item> REPAIRS_EMET = TagKey.create(
+    public static final TagKey<Item> REPAIRS_LIVYATAN = TagKey.create(
             Registries.ITEM,
-            Identifier.fromNamespaceAndPath(Brewsespresso.MOD_ID, "repairs_emet.json")
+            Identifier.fromNamespaceAndPath(Brewsespresso.MOD_ID, "repairs_livyatan.json")
     );
-    public static final ToolMaterial EMET_MATERIAL = new ToolMaterial(
+    public static final ToolMaterial LIVYATAN_MATERIAL = new ToolMaterial(
             BlockTags.INCORRECT_FOR_DIAMOND_TOOL,
             2000, // Durability
             5.0F, // Mining speed
             1.0F, // Enchantability (Bonus damage)
             22, // Enchantability (Enchantment quality)
-            REPAIRS_EMET // The repair tag we made above
+            REPAIRS_LIVYATAN // The repair tag we made above
     );
-    public static final Item EMET = register(
-            "emet",
+    public static final Item LIVYATAN = register(
+            "livyatan",
             Item::new,
             new Item.Properties()
-                    .sword(EMET_MATERIAL, 7f, -2.8f)
-                    .component(DataComponents.CUSTOM_NAME, Component.literal("Emet")
+                    .sword(LIVYATAN_MATERIAL, 7f, -2.8f)
+                    .component(DataComponents.ATTACK_RANGE, new AttackRange(
+                            0F, // min_reach
+                            3.5F, // max_reach
+                            0F, // min_reach_creative
+                            3.5F, // max_reach_creative
+                            0F, // hitbox_margin
+                            0F)) // mob_reach_multiplier
+                    .component(DataComponents.CUSTOM_NAME, Component.literal("livyatan")
                             .withStyle(style -> style
-                                    .withColor(TextColor.fromRgb(0xC0C0C0))
+                                    .withColor(TextColor.fromRgb(10060418))
                             ))
     );
 

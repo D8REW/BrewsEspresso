@@ -1,6 +1,6 @@
-package brew.modid.mixin.emet;
+package brew.modid.mixin.livyatan;
 
-import brew.modid.item.emet.EmetItem;
+import brew.modid.item.LivyatanItem;
 import brew.modid.particle.ModParticles;
 import brew.modid.payload.EmitterParticlePayload;
 import com.llamalad7.mixinextras.injector.wrapoperation.Operation;
@@ -21,8 +21,8 @@ public class ServerPlayerMixin {
             "Lnet/minecraft/server/level/ServerChunkCache;sendToTrackingPlayersAndSelf(Lnet/minecraft/world/entity/Entity;Lnet/minecraft/network/protocol/Packet;)V"))
     private void festive_frenzy$critEmitterPayload(ServerChunkCache instance, Entity receiver, Packet<?> packet, Operation<Void> original, Entity entity) {
         ServerPlayer serverPlayer = (ServerPlayer) (Object) this;
-        if (serverPlayer.getMainHandItem().is(EmetItem.EMET)) {
-            EmitterParticlePayload.send(serverPlayer, entity, (ParticleOptions) ModParticles.EMET_CRIT);
+        if (serverPlayer.getMainHandItem().is(LivyatanItem.LIVYATAN)) {
+            EmitterParticlePayload.send(serverPlayer, entity, (ParticleOptions) ModParticles.LIVYATAN_CRIT);
             return;
         }
 

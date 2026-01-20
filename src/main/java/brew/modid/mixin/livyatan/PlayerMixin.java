@@ -1,6 +1,6 @@
-package brew.modid.mixin.emet;
+package brew.modid.mixin.livyatan;
 
-import brew.modid.item.emet.EmetItem;
+import brew.modid.item.LivyatanItem;
 import brew.modid.particle.ModParticles;
 import net.minecraft.core.particles.ParticleOptions;
 import net.minecraft.world.entity.player.Player;
@@ -13,10 +13,10 @@ import org.spongepowered.asm.mixin.injection.ModifyArg;
 public class PlayerMixin {
 
     @ModifyArg(method = "doSweepAttack", at = @At(value = "INVOKE", target = "Lnet/minecraft/server/level/ServerLevel;sendParticles(Lnet/minecraft/core/particles/ParticleOptions;DDDIDDDD)I", ordinal = 0), index = 0)
-    private <T extends ParticleOptions> T festive_frenzy$candySweep(T particleOptions) {
+    private <T extends ParticleOptions> T brewsespresso$livyatanSweep(T particleOptions) {
         Player player = (Player) (Object) this;
-        if (player.getMainHandItem().is(EmetItem.EMET)) {
-            return (T) ModParticles.EMET_SWEEP;
+        if (player.getMainHandItem().is(LivyatanItem.LIVYATAN)) {
+            return (T) ModParticles.LIVYATAN_SWEEP;
         }
         return particleOptions;
     }
