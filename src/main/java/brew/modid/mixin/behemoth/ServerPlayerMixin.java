@@ -1,5 +1,6 @@
-package brew.modid.mixin.livyatan;
+package brew.modid.mixin.behemoth;
 
+import brew.modid.item.BehemothItem;
 import brew.modid.item.LivyatanItem;
 import brew.modid.particle.ModParticles;
 import brew.modid.payload.EmitterParticlePayload;
@@ -22,9 +23,9 @@ public class ServerPlayerMixin {
     private void brewsespresso$critEmitterPayload(ServerChunkCache instance, Entity receiver, Packet<?> packet, Operation<Void> original, Entity entity) {
         ServerPlayer serverPlayer = (ServerPlayer) (Object) this;
 
-        if (serverPlayer.getMainHandItem().is(LivyatanItem.LIVYATAN)) {
-            EmitterParticlePayload.send(serverPlayer, entity, (ParticleOptions) ModParticles.LIVYATAN_CRIT);
-            EmitterParticlePayload.send(serverPlayer, entity, (ParticleOptions) ModParticles.LIVYATAN_GASH);
+        if (serverPlayer.getMainHandItem().is(BehemothItem.BEHEMOTH)) {
+            EmitterParticlePayload.send(serverPlayer, entity, (ParticleOptions) ModParticles.BEHEMOTH_CRIT);
+            EmitterParticlePayload.send(serverPlayer, entity, (ParticleOptions) ModParticles.BEHEMOTH_GASH);
             return;
         }
 

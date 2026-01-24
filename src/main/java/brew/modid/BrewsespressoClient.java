@@ -1,5 +1,8 @@
 package brew.modid;
 
+import brew.modid.particle.behemoth.BehemothCritParticle;
+import brew.modid.particle.behemoth.BehemothGashParticle;
+import brew.modid.particle.behemoth.BehemothSweepParticle;
 import brew.modid.particle.livyatan.LivyatanCritParticle;
 import brew.modid.particle.livyatan.LivyatanSweepParticle;
 import brew.modid.particle.ModParticles;
@@ -13,6 +16,12 @@ public class BrewsespressoClient implements ClientModInitializer {
         public void onInitializeClient() {
                 ParticleFactoryRegistry.getInstance().register(ModParticles.LIVYATAN_CRIT, LivyatanCritParticle.Provider::new);
                 ParticleFactoryRegistry.getInstance().register(ModParticles.LIVYATAN_SWEEP, LivyatanSweepParticle.Provider::new);
+                ParticleFactoryRegistry.getInstance().register(ModParticles.LIVYATAN_GASH, LivyatanSweepParticle.Provider::new);
+
+                ParticleFactoryRegistry.getInstance().register(ModParticles.BEHEMOTH_CRIT, BehemothCritParticle.Provider::new);
+                ParticleFactoryRegistry.getInstance().register(ModParticles.BEHEMOTH_SWEEP, BehemothSweepParticle.Provider::new);
+                ParticleFactoryRegistry.getInstance().register(ModParticles.BEHEMOTH_GASH, BehemothGashParticle.Provider::new);
+
                 ClientPlayNetworking.registerGlobalReceiver(EmitterParticlePayload.TYPE, new EmitterParticlePayload.Receiver());
         }
 }

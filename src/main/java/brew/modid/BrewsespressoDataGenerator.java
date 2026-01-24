@@ -9,7 +9,6 @@ public class BrewsespressoDataGenerator implements DataGeneratorEntrypoint {
 	public void onInitializeDataGenerator(FabricDataGenerator fabricDataGenerator) {
 		FabricDataGenerator.Pack pack = fabricDataGenerator.createPack();
 
-		// Register the Item Tag Provider
 		pack.addProvider(ModItemTagProvider::new);
 	}
 }

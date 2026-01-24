@@ -5,7 +5,9 @@
 	"mixins": [
 		"ExampleMixin",
 		"livyatan.PlayerMixin",
-		"livyatan.ServerPlayerMixin"
+		"livyatan.ServerPlayerMixin",
+		"behemoth.PlayerMixin",
+		"behemoth.ServerPlayerMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

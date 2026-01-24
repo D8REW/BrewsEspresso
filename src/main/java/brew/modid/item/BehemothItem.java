@@ -18,26 +18,26 @@ import net.minecraft.world.item.component.AttackRange;
 
 import java.util.function.Function;
 
-public class LivyatanItem {
+public class BehemothItem {
 
 
-    public static final TagKey<Item> REPAIRS_LIVYATAN = TagKey.create(
+    public static final TagKey<Item> REPAIRS_BEHEMOTH = TagKey.create(
             Registries.ITEM,
-            Identifier.fromNamespaceAndPath(Brewsespresso.MOD_ID, "repairs_livyatan.json")
+            Identifier.fromNamespaceAndPath(Brewsespresso.MOD_ID, "repairs_behemoth.json")
     );
-    public static final ToolMaterial LIVYATAN_MATERIAL = new ToolMaterial(
+    public static final ToolMaterial BEHEMOTH_MATERIAL = new ToolMaterial(
             BlockTags.INCORRECT_FOR_DIAMOND_TOOL,
             2000, // Durability
             5.0F, // Mining speed
             1.0F, // Enchantability (Bonus damage)
             22, // Enchantability (Enchantment quality)
-            REPAIRS_LIVYATAN // The repair tag we made above
+            REPAIRS_BEHEMOTH // The repair tag we made above
     );
-    public static final Item LIVYATAN = register(
-            "livyatan",
+    public static final Item BEHEMOTH = register(
+            "behemoth",
             Item::new,
             new Item.Properties()
-                    .sword(LIVYATAN_MATERIAL, 7f, -2.8f)
+                    .sword(BEHEMOTH_MATERIAL, 8f, -3.2f)
                     .component(DataComponents.ATTACK_RANGE, new AttackRange(
                             0F, // min_reach
                             3.5F, // max_reach
@@ -45,7 +45,7 @@ public class LivyatanItem {
                             3.5F, // max_reach_creative
                             0F, // hitbox_margin
                             0F)) // mob_reach_multiplier
-                    .component(DataComponents.CUSTOM_NAME, Component.literal("Livyatan")
+                    .component(DataComponents.CUSTOM_NAME, Component.literal("Behemoth")
                             .withStyle(style -> style
                                     .withColor(TextColor.fromRgb(10060418))
                             ))

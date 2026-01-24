@@ -1,14 +1,8 @@
-package brew.modid.mixin.livyatan;
+package brew.modid.mixin.behemoth;
 
-import brew.modid.item.LivyatanItem;
+import brew.modid.item.BehemothItem;
 import brew.modid.particle.ModParticles;
-import brew.modid.sound.ModSounds;
-import com.llamalad7.mixinextras.injector.wrapoperation.Operation;
-import com.llamalad7.mixinextras.injector.wrapoperation.WrapOperation;
 import net.minecraft.core.particles.ParticleOptions;
-import net.minecraft.sounds.SoundEvent;
-import net.minecraft.sounds.SoundEvents;
-import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
@@ -27,8 +21,8 @@ public abstract class PlayerMixin extends LivingEntity {
     @ModifyArg(method = "doSweepAttack", at = @At(value = "INVOKE", target =
             "Lnet/minecraft/server/level/ServerLevel;sendParticles(Lnet/minecraft/core/particles/ParticleOptions;DDDIDDDD)I", ordinal = 0), index = 0)
     private <T extends ParticleOptions> T brewsespresso$livyatanSweep(T particleOptions) {
-        if (this.getMainHandItem().is(LivyatanItem.LIVYATAN)) {
-            return (T) ModParticles.LIVYATAN_SWEEP;
+        if (this.getMainHandItem().is(BehemothItem.BEHEMOTH)) {
+            return (T) ModParticles.BEHEMOTH_SWEEP;
         }
         return particleOptions;
     }

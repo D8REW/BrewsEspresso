@@ -1,5 +1,7 @@
 {
   "item.brewsespresso.brews_mischief": "Music Disc",
+  "item.brewsespresso.lunar_bloom": "Music Disc",
+  "item.brewsespresso.murder_in_the_air": "Music Disc",
   "itemGroup.example-mod": "Brews Espresso",
   "itemGroup.brewsespresso.item_group": "Brews Espresso",
   "item.brewsespresso.tulip_banner_pattern": "Tulip Banner Pattern",
@@ -20,7 +22,9 @@
   "block.minecraft.banner.brewsespresso_banner.tulip.red": "Red Tulip",
   "block.minecraft.banner.brewsespresso_banner.tulip.black": "Black Tulip",
   "item.brewsespresso.livyatan": "livyatan",
-  "item.brewsespresso.livyatan.description": "Judge of Truth",
+  "item.brewsespresso.livyatan.description": "Ruler of the Sea",
+  "item.brewsespresso.behemoth": "behemoth",
+  "item.brewsespresso.behemoth.description": "Concurer of the Land",
   "painting.brewsespresso.acorn.title": "Acorn",
   "painting.brewsespresso.acorn.author": "DahliaBrew"
 }

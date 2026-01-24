@@ -10,7 +10,11 @@ public class ModParticles {
 
     public static final SimpleParticleType LIVYATAN_CRIT = FabricParticleTypes.simple();
     public static final SimpleParticleType LIVYATAN_SWEEP = FabricParticleTypes.simple();
+    public static final SimpleParticleType LIVYATAN_GASH = FabricParticleTypes.simple();
 
+    public static final SimpleParticleType BEHEMOTH_CRIT = FabricParticleTypes.simple();
+    public static final SimpleParticleType BEHEMOTH_SWEEP = FabricParticleTypes.simple();
+    public static final SimpleParticleType BEHEMOTH_GASH = FabricParticleTypes.simple();
 
 
 
@@ -21,5 +25,8 @@ public class ModParticles {
 
         Registry.register(BuiltInRegistries.PARTICLE_TYPE,
                 Identifier.fromNamespaceAndPath("brewsespresso", "livyatan_sweep"), LIVYATAN_SWEEP);
+
+        Registry.register(BuiltInRegistries.PARTICLE_TYPE,
+                Identifier.fromNamespaceAndPath("brewsespresso", "livyatan_gash"), LIVYATAN_GASH);
     }
 }

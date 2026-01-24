@@ -8,12 +8,9 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
-import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.TagKey;
-import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Rarity;
-import net.minecraft.world.item.ToolMaterial;
 import java.util.function.Function;
 
 public class ModItems {
@@ -24,6 +21,20 @@ public class ModItems {
                     .stacksTo(16)
                     .rarity(Rarity.RARE)
                     .jukeboxPlayable(ModSounds.BREWS_MISCHIEF)
+    );
+
+    public static final Item LUNAR_BLOOM = register("lunar_bloom",
+            Item::new, new Item.Properties()
+                    .stacksTo(16)
+                    .rarity(Rarity.RARE)
+                    .jukeboxPlayable(ModSounds.LUNAR_BLOOM)
+    );
+
+    public static final Item MURDER_IN_THE_AIR = register("murder_in_the_air",
+            Item::new, new Item.Properties()
+                    .stacksTo(16)
+                    .rarity(Rarity.RARE)
+                    .jukeboxPlayable(ModSounds.MURDER_IN_THE_AIR)
     );
 
     public static final Item BREWICH = register("brewich",

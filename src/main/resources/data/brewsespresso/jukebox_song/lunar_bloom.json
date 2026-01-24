@@ -1,0 +1,11 @@
+{
+  "sound_event": {
+    "sound_id": "brewsespresso:lunar_bloom",
+    "range": 16.0
+  },
+  "description": {
+    "text": "Joshy__dude - Lunar Bloom"
+  },
+  "length_in_seconds": 77.0,
+  "comparator_output": 8
+}

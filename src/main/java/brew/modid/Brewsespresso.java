@@ -1,5 +1,8 @@
 package brew.modid;
 
+import brew.modid.block.ModBlockEntity;
+import brew.modid.block.ModBlocks;
+import brew.modid.item.BehemothItem;
 import brew.modid.item.LivyatanItem;
 import brew.modid.item.ModItemGroups;
 import brew.modid.item.ModItems;
@@ -41,20 +44,25 @@ public class Brewsespresso implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModBlocks.initialize();
+		ModBlockEntity.initialize();
 		ModItems.initialize();
 		ModItemGroups.initialize();
 		ModSounds.initialize();
 		ModParticles.initialize();
 		LivyatanItem.initialize();
+		BehemothItem.initialize();
 		PayloadTypeRegistry.playS2C().register(EmitterParticlePayload.TYPE, EmitterParticlePayload.CODEC);
-
 
 
 		Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, CUSTOM_ITEM_GROUP_KEY, CUSTOM_ITEM_GROUP);
 		ItemGroupEvents.modifyEntriesEvent(CUSTOM_ITEM_GROUP_KEY).register(itemGroup -> {
 			itemGroup.accept(ModItems.BREWS_MISCHIEF);
+			itemGroup.accept(ModItems.LUNAR_BLOOM);
+			itemGroup.accept(ModItems.MURDER_IN_THE_AIR);
 			itemGroup.accept(ModItems.TULIP_BANNER_PATTERN);
 			itemGroup.accept(LivyatanItem.LIVYATAN);
+			itemGroup.accept(BehemothItem.BEHEMOTH);
 		});
 	}
 }
