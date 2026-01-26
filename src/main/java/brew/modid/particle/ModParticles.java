@@ -28,5 +28,14 @@ public class ModParticles {
 
         Registry.register(BuiltInRegistries.PARTICLE_TYPE,
                 Identifier.fromNamespaceAndPath("brewsespresso", "livyatan_gash"), LIVYATAN_GASH);
+
+        Registry.register(BuiltInRegistries.PARTICLE_TYPE,
+                Identifier.fromNamespaceAndPath("brewsespresso", "behemoth_crit"), BEHEMOTH_CRIT);
+
+        Registry.register(BuiltInRegistries.PARTICLE_TYPE,
+                Identifier.fromNamespaceAndPath("brewsespresso", "behemoth_sweep"), BEHEMOTH_SWEEP);
+
+        Registry.register(BuiltInRegistries.PARTICLE_TYPE,
+                Identifier.fromNamespaceAndPath("brewsespresso", "behemoth_gash"), BEHEMOTH_GASH);
     }
 }

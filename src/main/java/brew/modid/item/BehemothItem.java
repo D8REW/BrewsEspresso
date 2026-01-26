@@ -18,7 +18,10 @@ import net.minecraft.world.item.component.AttackRange;
 
 import java.util.function.Function;
 
-public class BehemothItem {
+public class BehemothItem extends Item{
+    public BehemothItem(Properties properties) {
+        super(properties);
+    }
 
 
     public static final TagKey<Item> REPAIRS_BEHEMOTH = TagKey.create(
@@ -45,10 +48,6 @@ public class BehemothItem {
                             3.5F, // max_reach_creative
                             0F, // hitbox_margin
                             0F)) // mob_reach_multiplier
-                    .component(DataComponents.CUSTOM_NAME, Component.literal("Behemoth")
-                            .withStyle(style -> style
-                                    .withColor(TextColor.fromRgb(10060418))
-                            ))
     );
 
     public static <GenericItem extends Item> GenericItem register(String name, Function<Item.Properties, GenericItem> itemFactory, Item.Properties settings) {

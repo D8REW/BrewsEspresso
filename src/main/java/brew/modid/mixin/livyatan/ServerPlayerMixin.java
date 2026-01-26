@@ -24,7 +24,6 @@ public class ServerPlayerMixin {
 
         if (serverPlayer.getMainHandItem().is(LivyatanItem.LIVYATAN)) {
             EmitterParticlePayload.send(serverPlayer, entity, (ParticleOptions) ModParticles.LIVYATAN_CRIT);
-            EmitterParticlePayload.send(serverPlayer, entity, (ParticleOptions) ModParticles.LIVYATAN_GASH);
             return;
         }
 

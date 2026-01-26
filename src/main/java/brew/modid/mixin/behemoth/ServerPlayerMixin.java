@@ -25,7 +25,6 @@ public class ServerPlayerMixin {
 
         if (serverPlayer.getMainHandItem().is(BehemothItem.BEHEMOTH)) {
             EmitterParticlePayload.send(serverPlayer, entity, (ParticleOptions) ModParticles.BEHEMOTH_CRIT);
-            EmitterParticlePayload.send(serverPlayer, entity, (ParticleOptions) ModParticles.BEHEMOTH_GASH);
             return;
         }
 

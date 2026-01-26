@@ -1,17 +1,19 @@
 package brew.modid.item;
 
 import brew.modid.Brewsespresso;
+import brew.modid.payload.EmitterParticlePayload;
+import brew.modid.sound.ModSounds;
 import net.minecraft.core.Registry;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
-import net.minecraft.network.chat.Component;
-import net.minecraft.network.chat.TextColor;
 import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.TagKey;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.ToolMaterial;
 import net.minecraft.world.item.component.AttackRange;
 
@@ -45,11 +47,8 @@ public class LivyatanItem {
                             3.5F, // max_reach_creative
                             0F, // hitbox_margin
                             0F)) // mob_reach_multiplier
-                    .component(DataComponents.CUSTOM_NAME, Component.literal("Livyatan")
-                            .withStyle(style -> style
-                                    .withColor(TextColor.fromRgb(10060418))
-                            ))
     );
+
 
     public static <GenericItem extends Item> GenericItem register(String name, Function<Item.Properties, GenericItem> itemFactory, Item.Properties settings) {
         ResourceKey<Item> itemKey = ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(Brewsespresso.MOD_ID, name));
