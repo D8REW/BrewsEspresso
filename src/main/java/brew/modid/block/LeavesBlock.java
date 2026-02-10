@@ -1,6 +1,6 @@
 package brew.modid.block;
 
-public class ModBlockEntity {
+public class LeavesBlock {
     public static void initialize() {
     }
 }
