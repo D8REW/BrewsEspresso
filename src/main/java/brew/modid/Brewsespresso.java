@@ -50,7 +50,7 @@ public class Brewsespresso implements ModInitializer {
 		LivyatanItem.initialize();
 		BehemothItem.initialize();
 
-		HangingLeavesBlock.initialize();
+		HangingFruit.initialize();
 		LeavesBlock.initialize();
 		SaplingBlock.initialize();
 

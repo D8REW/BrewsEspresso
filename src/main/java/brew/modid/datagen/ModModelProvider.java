@@ -17,7 +17,6 @@ public class ModModelProvider extends FabricModelProvider {
         //Purple Heart
         BlockModelGenerators.BlockFamilyProvider purpleHeartFamily = blockModelGenerators.family(ModBlocks.PURPLE_HEART_PLANKS);
 
-        blockModelGenerators.createTrivialCube(ModBlocks.PURPLE_HEART_PLANKS);
         purpleHeartFamily.stairs(ModBlocks.PURPLE_HEART_STAIRS);
         purpleHeartFamily.slab(ModBlocks.PURPLE_HEART_SLAB);
         purpleHeartFamily.fence(ModBlocks.PURPLE_HEART_FENCE);
@@ -36,7 +35,6 @@ public class ModModelProvider extends FabricModelProvider {
         blockModelGenerators.createDoor(ModBlocks.PURPLE_HEART_DOOR);
         blockModelGenerators.createTrapdoor(ModBlocks.PURPLE_HEART_TRAPDOOR);
 
-
         //Blood Thistle
 
         //RootTree
@@ -45,7 +43,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockModelGenerators.createDoublePlant(ModBlocks.BELLADONA, BlockModelGenerators.PlantType.NOT_TINTED);
         blockModelGenerators.createFlowerBed(ModBlocks.FORGET_ME_NOT);
 
-        //
+
     }
     @Override
     public void generateItemModels(ItemModelGenerators itemModelGenerators) {
@@ -59,8 +57,5 @@ public class ModModelProvider extends FabricModelProvider {
 
         //Icon
         itemModelGenerators.createFlatItemModel(ModItems.BREWICH, ModelTemplates.FLAT_ITEM);
-
-
-
     }
 }
