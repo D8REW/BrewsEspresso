@@ -3,11 +3,7 @@
 	"package": "brew.modid.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
-		"ExampleMixin",
-		"livyatan.PlayerMixin",
-		"livyatan.ServerPlayerMixin",
-		"behemoth.PlayerMixin",
-		"behemoth.ServerPlayerMixin"
+		"ExampleMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

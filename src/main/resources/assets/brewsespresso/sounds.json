@@ -1,4 +1,5 @@
 {
+
   "brews_mischief": {
     "subtitle": "sound.brewsespresso.brews_mischief",
     "sounds": ["brewsespresso:brews_mischief"],
@@ -13,29 +14,6 @@
     "subtitle": "sound.brewsespresso.murder_in_the_air",
     "sounds": ["brewsespresso:murder_in_the_air"],
     "stream": true
-  },
 
-  "livyatan_crit": {
-    "subtitle": "sound.brewsespresso.livyatan_crit_sound",
-    "sounds": ["brewsespresso:livyatan_crit_sound"],
-    "stream": true
-  },
-
-  "livyatan_sweep": {
-    "subtitle": "sound.brewsespresso.livyatan_sweep_sound",
-    "sounds": ["brewsespresso:livyatan_sweep_sound"],
-    "stream": true
-  },
-
-  "behemoth_crit": {
-    "subtitle": "sound.brewsespresso.behemoth_crit_sound",
-    "sounds": ["brewsespresso:behemoth_crit_sound"],
-    "stream": true
-  },
-
-  "behemoth_sweep": {
-    "subtitle": "sound.brewsespresso.behemoth_sweep_sound",
-    "sounds": ["brewsespresso:behemoth_sweep_sound"],
-    "stream": true
   }
 }

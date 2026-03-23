@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "brewsespresso:item/livyatan_gui",
-    "particle": "brewsespresso:item/livyatan_gui"
-  }
-}
