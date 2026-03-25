@@ -77,6 +77,26 @@ public class Brewsespresso implements ModInitializer {
 			itemGroup.accept(BeBlocks.COLOSSAL_LILY_OF_THE_VALLEY);
 
 			//Mauvy
+			itemGroup.accept(BeBlocks.MAUVY_LOG);
+			itemGroup.accept(BeBlocks.MAUVY_WOOD);
+			itemGroup.accept(BeBlocks.STRIPPED_MAUVY_LOG);
+			itemGroup.accept(BeBlocks.STRIPPED_MAUVY_WOOD);
+			itemGroup.accept(BeBlocks.MAUVY_PLANK);
+			itemGroup.accept(BeBlocks.MAUVY_STAIR);
+			itemGroup.accept(BeBlocks.MAUVY_SLAB);
+			itemGroup.accept(BeBlocks.MAUVY_FENCE);
+			itemGroup.accept(BeBlocks.MAUVY_FENCE_GATE);
+			itemGroup.accept(BeBlocks.MAUVY_DOOR);
+			itemGroup.accept(BeBlocks.MAUVY_TRAPDOOR);
+			itemGroup.accept(BeBlocks.MAUVY_SIGN);
+			itemGroup.accept(BeBlocks.MAUVY_HANGING_SIGN);
+			itemGroup.accept(BeBlocks.MAUVY_SHELF);
+			itemGroup.accept(BeBlocks.MAUVY_PRESSURE_PLATE);
+			itemGroup.accept(BeBlocks.MAUVY_BUTTON);
+			itemGroup.accept(BeBlocks.MAUVY_LEAVES);
+			//itemGroup.accept(BeBlocks.MAUVY_SAPLING);
+			itemGroup.accept(BeItems.MAUVY_BOAT.asItem());
+			itemGroup.accept(BeItems.MAUVY_CHEST_BOAT.asItem());
 		});
 	}
 }

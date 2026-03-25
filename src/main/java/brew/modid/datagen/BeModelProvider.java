@@ -34,6 +34,9 @@ public class BeModelProvider extends FabricModelProvider {
 
         blockModelGenerators.createDoor(BeBlocks.MAUVY_DOOR);
         blockModelGenerators.createTrapdoor(BeBlocks.MAUVY_TRAPDOOR);
+        //blockModelGenerators.createShelf(BeBlocks.MAUVY_SHELF);
+        //blockModelGenerators.createTrivialBlock(BeBlocks.MAUVY_LEAVES);
+        //blockModelGenerators.createCrossBlock(BeBlocks.MAUVY_SAPLING);
 
         //Flowers
         blockModelGenerators.createDoublePlant(BeBlocks.BELLADONA, BlockModelGenerators.PlantType.NOT_TINTED);
@@ -42,20 +45,20 @@ public class BeModelProvider extends FabricModelProvider {
         blockModelGenerators.createCrossBlock(BeBlocks.CYAN_ROSE, BlockModelGenerators.PlantType.NOT_TINTED);
         blockModelGenerators.createCrossBlock(BeBlocks.RED_ROSE, BlockModelGenerators.PlantType.NOT_TINTED);
         blockModelGenerators.createFlowerBed(BeBlocks.FORGET_ME_NOT);
-
-
-
-
     }
+
     @Override
     public void generateItemModels(ItemModelGenerators itemModelGenerators) {
-        //Discs
+
+        //Discs, Patterns & Trims
         itemModelGenerators.createFlatItemModel(BeItems.LUNAR_BLOOM, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.createFlatItemModel(BeItems.MURDER_IN_THE_AIR, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.createFlatItemModel(BeItems.BREWS_MISCHIEF, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.createFlatItemModel(BeItems.TULIP_BANNER_PATTERN, ModelTemplates.FLAT_ITEM);
 
         //Patterns&Trims
-        itemModelGenerators.createFlatItemModel(BeItems.TULIP_BANNER_PATTERN, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.createFlatItemModel(BeItems.MAUVY_BOAT, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.createFlatItemModel(BeItems.MAUVY_CHEST_BOAT, ModelTemplates.FLAT_ITEM);
 
         //Icon
         itemModelGenerators.createFlatItemModel(BeItems.BREWICH, ModelTemplates.FLAT_ITEM);
@@ -64,3 +67,4 @@ public class BeModelProvider extends FabricModelProvider {
 
     }
 }
+ 

@@ -136,10 +136,10 @@ public class BeTagProvider {
                     .add(BeBlocks.EMPOROR_TULIP)
                     .add(BeBlocks.COLOSSAL_LILY_OF_THE_VALLEY);
 
-
         }
 
     }
+
     public static class BeEntityTagProvider extends FabricTagProvider.EntityTypeTagProvider{
         public BeEntityTagProvider(FabricDataOutput output, CompletableFuture<HolderLookup.Provider> registriesFuture) {
             super(output, registriesFuture);
